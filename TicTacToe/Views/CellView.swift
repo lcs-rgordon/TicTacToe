@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct CellView: View {
+    
+    // MARK: Stored property
+    
+    // What is the mark (or lack of a mark) in this cell?
+    @State var content: CellState = .blank
+    
+    // MARK: Computed property
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack {
+            Rectangle()
+                .fill(.white)
+                .border(.black, width: 5)
+                .aspectRatio(1.0, contentMode: .fit)
+            
+            Text(content.rawValue)
+                .font(.system(size: 200))
+        }
+        
     }
 }
 

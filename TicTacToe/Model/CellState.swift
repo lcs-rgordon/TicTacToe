@@ -10,5 +10,5 @@ import Foundation
 enum CellState: String {
     case blank = ""
     case oh = "○"
-    case ex = "×≠"
+    case ex = "×"
 }
