@@ -17,15 +17,18 @@ struct CellView: View {
     // MARK: Computed property
     var body: some View {
         
-        ZStack {
-            Rectangle()
-                .fill(.white)
-                .border(.black, width: 5)
-                .aspectRatio(1.0, contentMode: .fit)
-            
-            Text(content.rawValue)
-                .font(.system(size: 200))
-        }
+        Text(content.rawValue)
+            .frame(width: 200, height: 200)
+            .font(.system(size: 150))
+            .aspectRatio(1.0, contentMode: .fit)
+            .background(.white)
+            .border(.black, width: 10)
+            // Make sure that a tap anywhere on the square works
+            .contentShape(Rectangle())
+            // Make the rectangle respond to taps
+            .onTapGesture {
+                content = .ex
+            }
         
     }
 }
