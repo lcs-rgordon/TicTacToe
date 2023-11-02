@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		81BA24F52AF448B3003A7951 /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA24F42AF448B3003A7951 /* TicTacToeApp.swift */; };
-		81BA24F72AF448B3003A7951 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA24F62AF448B3003A7951 /* ContentView.swift */; };
 		81BA24F92AF448B4003A7951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BA24F82AF448B4003A7951 /* Assets.xcassets */; };
 		81BA24FC2AF448B4003A7951 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BA24FB2AF448B4003A7951 /* Preview Assets.xcassets */; };
+		81BA25062AF449F9003A7951 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA25052AF449F9003A7951 /* CellView.swift */; };
+		81BA25082AF44A29003A7951 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA25072AF44A29003A7951 /* BoardView.swift */; };
+		81BA250A2AF44A82003A7951 /* CellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA25092AF44A82003A7951 /* CellState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81BA24F12AF448B3003A7951 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BA24F42AF448B3003A7951 /* TicTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
-		81BA24F62AF448B3003A7951 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81BA24F82AF448B4003A7951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81BA24FB2AF448B4003A7951 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81BA24FD2AF448B4003A7951 /* TicTacToe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TicTacToe.entitlements; sourceTree = "<group>"; };
+		81BA25052AF449F9003A7951 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		81BA25072AF44A29003A7951 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		81BA25092AF44A82003A7951 /* CellState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				81BA24F42AF448B3003A7951 /* TicTacToeApp.swift */,
-				81BA24F62AF448B3003A7951 /* ContentView.swift */,
+				81BA25042AF449B6003A7951 /* Model */,
+				81BA25032AF449A2003A7951 /* Views */,
 				81BA24F82AF448B4003A7951 /* Assets.xcassets */,
 				81BA24FD2AF448B4003A7951 /* TicTacToe.entitlements */,
 				81BA24FA2AF448B4003A7951 /* Preview Content */,
@@ -67,6 +72,23 @@
 				81BA24FB2AF448B4003A7951 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81BA25032AF449A2003A7951 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81BA25052AF449F9003A7951 /* CellView.swift */,
+				81BA25072AF44A29003A7951 /* BoardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81BA25042AF449B6003A7951 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81BA25092AF44A82003A7951 /* CellState.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81BA24F72AF448B3003A7951 /* ContentView.swift in Sources */,
+				81BA25082AF44A29003A7951 /* BoardView.swift in Sources */,
+				81BA25062AF449F9003A7951 /* CellView.swift in Sources */,
 				81BA24F52AF448B3003A7951 /* TicTacToeApp.swift in Sources */,
+				81BA250A2AF44A82003A7951 /* CellState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
